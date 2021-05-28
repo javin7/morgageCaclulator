@@ -8,12 +8,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
         //Scanner to take user input
         Scanner in = new Scanner(System.in);
 
         //Welcome
-        System.out.print("WELCOME TO THE MORTGAGE CALCULATOR!\nGET AN ESTIMATE ON THE COSTS OF GETTING A NEW HOME!\n");
+        System.out.print("WELCOME TO THE MORTGAGE ESTIMATE CALCULATOR!\nGET AN ESTIMATE ON THE COSTS OF GETTING A NEW HOME!\n");
 
         //Get principal loan amount
         System.out.print("Enter the principal loan amount: $");
@@ -47,10 +46,5 @@ public class Main {
         System.out.println("Your initial down payment is: $" + (principalLoanAmount * (downPayment / 100)));
         System.out.println("Your monthly mortgage payment is: $" + (totalMonthlyMortgagePayment));
         System.out.println("\nYour total payment per month estimate is: $" + (totalMonthlyMortgagePayment + propertyTax + HOAFees));
-    }
-
-    public static void clearScreen() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
     }
 }
